@@ -1,0 +1,23 @@
+shell ${SHELL}
+startup_message off
+termcapinfo xterm* ti@:te@
+
+defscrollback         50000            # default: 100
+
+
+#hardstatus string "> %n%?: %t%? %w || %W "
+#hardstatus string "> %w%{|} "
+#hardstatus string "%{-b ..}%-w%{+b ..}[%n%f*%t]%{-}%+w"
+#hardstatus string "%{-b ..}%-w%{+b ..}[%n%f*%t]%{-}%+w"
+
+# backtick 1 2 60 cat /sys/class/power_supply/BAT0/capacity
+backtick 1 2 60  $HOME/batt.sh
+
+
+#hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< B:%1`"
+
+# linux laptop with battery view
+hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< "
+shelltitle
+
+
