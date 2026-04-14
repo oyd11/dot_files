@@ -12,6 +12,7 @@ defscrollback         50000            # default: 100
 
 # backtick 1 2 60 cat /sys/class/power_supply/BAT0/capacity
 backtick 1 2 60  $HOME/batt.sh
+#backtick 1 2 60  $HOME/batt_macos.sh
 
 
 #hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< B:%1`"
