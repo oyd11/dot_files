@@ -11,14 +11,14 @@ defscrollback         50000            # default: 100
 #hardstatus string "%{-b ..}%-w%{+b ..}[%n%f*%t]%{-}%+w"
 
 # backtick 1 2 60 cat /sys/class/power_supply/BAT0/capacity
-backtick 1 2 60  $HOME/batt.sh
-#backtick 1 2 60  $HOME/batt_macos.sh
+#backtick 1 1 2  $HOME/batt_macos.sh
+backtick 1 1 2  $HOME/batt_est.sh
+backtick 2 1 2  $HOME/batt.sh
+
 
 
 #hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< B:%1`"
 
 # linux laptop with battery view
-hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< "
+hardstatus alwayslastline "%{b kw}%H %{r}%1` %{y}%2` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%< "
 shelltitle
-
-
